@@ -37,7 +37,8 @@ const context = await esbuild.context({
   logLevel: "info",
   sourcemap: prod ? false : "inline",
   treeShaking: true,
-  outfile: "build/main.js",
+  // outfile: "build/main.js",
+  outfile: "main.js",
 });
 
 if (prod) {
